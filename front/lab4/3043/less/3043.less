@@ -1,0 +1,66 @@
+@primary-color: #e74c3c;
+@secondary-color: #777;
+@background-color: #f8f9fa;
+@font-color: #333;
+@box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: @background-color;
+  color: @font-color;
+}
+
+.news-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 16px;
+    color: @secondary-color;
+  }
+
+  .fa-wrench {
+    color: @primary-color;
+    font-size: 24px;
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: @box-shadow;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: @secondary-color;
+  }
+}
